@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jscfo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+<link rel="stylesheet" href="./index.css">
+<script src="./index.js"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+<header id="header">
+  <div class="header-content">
+    <div class="header-left">
+      
+      <h1>Jana Seva Chit Fund</h1>
+    </div>
+    <div class="header-right">
+      <div class="clock-container">
+        <div class="clock" id="clock">
+          <!-- Clock will be updated here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </header>
+
+
+<div class="container" id="dashboard" style="display:flex;">
+
+   <div class="menu">
+      <a class="menu-button" id="menu-button" onclick="viewMenu()"></a>
+        <i class="fas fa-solid fa-bars"></i> Menu
+      </a>
+   </div>
+    <!-- Sidebar for navigation -->
+    <div class="sidebar">
+      <button onclick="viewProfile()">
+        <i class="fas fa-user"></i> Profile
+      </button>
+      <button onclick="viewTransactions()">
+        <i class="fas fa-exchange-alt"></i> Transactions
+      </button>
+      <button onclick="viewLoanDetails()">
+        <i class="fas fa-credit-card"></i> Loan Details
+      </button>
+     
+      <button onclick="viewNotifications()">
+        <i class="fas fa-bell"></i> Notification
+      </button>
+      <!-- New About Us button -->
+  <button onclick="viewAboutUs()">
+  <i class="fas fa-info-circle"></i> About Us
+</button>
+<!-- New Terms & Conditions button -->
+  <button onclick="viewTermsAndConditions()">
+    <i class="fas fa-file-alt"></i> Terms & Conditions
+  </button>
+      <button id="logout" onclick="logout()">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </div>
+
+    <!-- Dashboard Content -->
+   <div class="dashboard-container">
+      <h2>My Dashboard</h2>
+      <div class="dashboard-content" id="content">
+        <!-- Dynamic content will be displayed here -->
+       </div>
+   
+    </div>
+
+
+   </div>
+
+
+
+
+
+    
+  
+
+<!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Jana Seva Chit Fund. All rights reserved.</p>
+      <p>
+        <a href="https://www.example.com/privacy" target="_blank">Privacy Policy</a> |
+        <a href="https://www.example.com/terms" target="_blank">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
