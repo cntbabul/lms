@@ -148,18 +148,17 @@ button:hover {
 }
 
 .dashboard-container {
-  margin-left: 250px;
   padding: 40px 10px 10px 10px;
-  width: calc(100% - 250px);
+  width: 100%;
   height: calc(100vh - 40px); /* Adjust height considering header height */
   background-color: #f5f5dc; /*rgba(0, 123, 255, 0.2); /* Semi-transparent blue */
   display: flex;
   flex-direction: column;
-  margin-top: 40px; /* Adjust top margin considering header height */
+  margin-top: 30px; /* Adjust top margin considering header height */
 }
 
 .dashboard-content {
-  padding: 20px;
+  padding: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -232,25 +231,8 @@ header h1 {
   margin: 0;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
+.navbar {
+  margin-top: 50px;
 }
 
 /* Footer styles */
@@ -294,79 +276,4 @@ footer a:hover {
 }
 .menu {
   display: none;
-}
-
-@media (max-width: 768px) {
-  h2 {
-    color: #007bff;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .menu {
-    display: flex;
-    /* flex-direction: row; */
-    margin-top: 125px;
-    align-items: center;
-    /* justify-content: left; */
-    /* position: relative; */
-    gap: 5px;
-  }
-
-  .sidebar {
-    height: calc(100vh - 60px); /* Adjust height considering header height */
-    width: 100vw;
-    background-color: #003166;
-    top: 120px; /* Adjust top margin considering header height */
-    left: 0;
-    /* onclick funtion flex */
-    display: none;
-    flex-direction: column;
-
-    padding-top: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .dashboard-container {
-    margin-left: 0px;
-    padding: 20px;
-    width: 100%;
-    height: calc(100vh - 40px); /* Adjust height considering header height */
-    background-color: #f5f5dc; /*rgba(0, 123, 255, 0.2); /* Semi-transparent blue */
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px; /* Adjust top margin considering header height */
-  }
-
-  .dashboard-content {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-grow: 1;
-    overflow-y: auto;
-  }
-
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 5px 0;
-  }
-
-  footer {
-    font-size: 14px;
-  }
 }
